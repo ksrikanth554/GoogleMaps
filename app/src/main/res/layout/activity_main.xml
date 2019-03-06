@@ -1,0 +1,48 @@
+<LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="0.6"
+                          android:orientation="vertical"
+                          android:layout_height="match_parent">
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/txtlat"
+                              android:text="lat"
+                              android:padding="3dp"
+                              android:textSize="15sp"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/txtlong"
+                              android:padding="3dp"
+                              android:text="long"
+                              android:textSize="15sp"
+                              android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <Button android:layout_width="0dp"
+                        android:text="GetLoacation"
+                        android:id="@+id/btngetlocation"
+                        android:textAllCaps="false"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+    <fragment android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/frag1"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+
+    />
+
+
+
+</LinearLayout>
